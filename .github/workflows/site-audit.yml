@@ -1,0 +1,34 @@
+name: Audit unofficial editor publication
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: site-audit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out website as data
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          path: site
+          persist-credentials: false
+      - name: Check out reviewed read-only audit tools
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: zthegin/Gintama---Gintoki-vs-Hijikata-game-english-translation
+          ref: 5466171d3fb4e139388c79ca6eac28387cddaf52
+          path: validator
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.13'
+      - name: Check files, local links, assets and unofficial notices without a ROM
+        run: python -B validator/tools/check_site.py --site site --audit
