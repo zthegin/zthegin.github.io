@@ -10,6 +10,8 @@ This project translates this particular game. It is not a translation of the Gin
 
 This is unofficial fan translation.
 
+The Cutscenes page covers scripts `s01`–`s05`; Battle lists all 90 battle scripts. Choose a script and load your own original ROM to reveal supported untranslated entries. Write the English, then use **Suggest on GitHub** for review.
+
 ## Choose what you want to do
 
 - [I just want to play](#i-just-want-to-play)
@@ -28,7 +30,7 @@ Most users and translation contributors need no coding. **Suggest on GitHub is t
 
 **Before you build:** this project supplies no ROMs, unauthorized download links or help finding unauthorized copies. If you are unsure whether you may use a ROM, stop and check first. A matching checksum confirms compatibility, not ownership or permission. Keep rebuilt ROMs and extracted game assets private; remove personal file paths from public bug reports.
 
-Prefer Claude Code, Codex or another local coding assistant? The [source README has a copyable setup request](https://github.com/zthegin/Gintama---Gintoki-vs-Hijikata-game-english-translation#i-just-want-to-play). It must get your ROM path from you, keep the original unchanged and never download or upload game files.
+Prefer a local coding assistant? The [source README has a copyable setup request](https://github.com/zthegin/Gintama---Gintoki-vs-Hijikata-game-english-translation#i-just-want-to-play). It must get your ROM path from you, keep the original unchanged and never download or upload game files.
 
 ### I want to help translate
 
@@ -54,7 +56,7 @@ This website supports an English fan translation of Banpresto’s 2006 Nintendo 
 
 The builder applies the bundled English text, graphics and UI labels on your computer. See [current progress](https://github.com/zthegin/Gintama---Gintoki-vs-Hijikata-game-english-translation#current-progress) for entry and batch counts. Much of the game is still Japanese, and the full game still needs playtesting.
 
-The website handles field dialogue, [the opening script](https://zthegin.github.io/cutscenes.html), image labels and [battle dialogue](https://zthegin.github.io/battle.html). Loading your own ROM reveals supported untranslated opening and battle records. Send one line as an issue, or follow the editor guide to submit a checked English-only batch PR to `staging`. Use the local builder to check downloads with `--cutscene` or `--battle`. Other cutscene scripts remain unsupported. Japanese is decoded from your local ROM and is not included in exports or suggestions.
+The website handles field dialogue, [the five main cutscene scripts](https://zthegin.github.io/cutscenes.html), image labels and [battle dialogue](https://zthegin.github.io/battle.html). Loading your own ROM reveals supported untranslated opening and battle records. Send one line as an issue, or follow the editor guide to submit a checked English-only batch PR to `staging`. Use the local builder to check downloads with `--cutscene` or `--battle`. The Cutscenes selector covers s01–s05. Records with unknown controls remain read-only. Japanese is decoded from your local ROM and is not included in exports or suggestions.
 
 ## Further docs
 
