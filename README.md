@@ -10,7 +10,7 @@ This project translates this particular game. It is not a translation of the Gin
 
 This is unofficial fan translation.
 
-The Cutscenes page covers scripts `s01`–`s05`; Battle lists all 90 battle scripts. Choose a script and load your own original ROM to reveal supported untranslated entries. Write the English, then use **Suggest on GitHub** for review.
+The Cutscene editor covers scripts `s01` through `s05`. Battle lists all 90 battle scripts. Choose a script and load your own original ROM to see the Japanese. Use **Suggest on GitHub** to send a correction or translation for review.
 
 ## Choose what you want to do
 
@@ -56,7 +56,7 @@ This website supports an English fan translation of Banpresto’s 2006 Nintendo 
 
 The builder applies the bundled English text, graphics and UI labels on your computer. See [current progress](https://github.com/zthegin/Gintama---Gintoki-vs-Hijikata-game-english-translation#current-progress) for entry and batch counts. Much of the game is still Japanese, and the full game still needs playtesting.
 
-The website handles field dialogue, [the five main cutscene scripts](https://zthegin.github.io/cutscenes.html), image labels and [battle dialogue](https://zthegin.github.io/battle.html). Loading your own ROM reveals supported untranslated opening and battle records. Send one line as an issue, or follow the editor guide to submit a checked English-only batch PR to `staging`. Use the local builder to check downloads with `--cutscene` or `--battle`. The Cutscenes selector covers s01–s05. Records with unknown controls remain read-only. Japanese is decoded from your local ROM and is not included in exports or suggestions.
+The editor includes English for 22,480 field records, all 4,064 supported cutscene records and 7,180 battle records. The battle total includes repeated lines. In-game proofreading is still underway.
 
 ## Further docs
 
