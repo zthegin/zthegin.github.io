@@ -2,7 +2,9 @@
 
 Help translate this Nintendo DS game in your browser. Load your own legally obtained ROM, edit a line, then send it as a GitHub issue. You do not need to install anything or write code to contribute.
 
-The playable game is built separately on your computer. This repository hosts the editor, not a game download.
+The playable game is built separately on your computer. This repository hosts the editor, not a game download. 
+
+Piracy is illegal, and you must use your own legally obtained game files.
 
 I do not own Gintama, the original game or its characters, story, artwork, music, text or trademarks. All game rights belong to their respective holders. This is an unofficial fan and educational project, with no affiliation or endorsement from the rights holders.
 
